@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ... rest of the HTML remains the same ... -->
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card shadow-lg">
+                    <div class="card-header bg-primary text-white text-center">
+                        <h1 class="mb-0">Tic Tac Toe</h1>
+                    </div>
+                    <div class="card-body">
+                        <!-- Game Status -->
+                        <div class="text-center mb-4">
+                            <h3 id="status" class="text-primary">Player X's Turn</h3>
+                        </div>
+                        
+                        <!-- Game Board -->
+                        <div class="game-board mb-4">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <div class="cell" data-index="0"></div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="cell" data-index="1"></div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="cell" data-index="2"></div>
+                                </div>
+                            </div>
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <div class="cell" data-index="3"></div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="cell" data-index="4"></div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="cell" data-index="5"></div>
+                                </div>
+                            </div>
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <div class="cell" data-index="6"></div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="cell" data-index="7"></div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="cell" data-index="8"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Reset Button -->
+                        <div class="text-center">
+                            <button id="resetBtn" class="btn btn-success btn-lg">Reset Game</button>
+                        </div>
+                        
+                        <!-- Score Board -->
+                        <div class="row mt-4">
+                            <div class="col-6">
+                                <div class="score-card text-center p-3 bg-light rounded">
+                                    <h5>Player X</h5>
+                                    <h2 id="scoreX" class="text-primary">0</h2>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="score-card text-center p-3 bg-light rounded">
+                                    <h5>Player O</h5>
+                                    <h2 id="scoreO" class="text-danger">0</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
